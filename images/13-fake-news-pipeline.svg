@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 318" width="1000" height="318" font-family="Arial,Helvetica,sans-serif">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#555"/></marker></defs>
+<rect width="1000" height="318" fill="#ffffff"/>
+<text x="500.0" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111">Fake news detection pipeline</text>
+<rect x="100.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="185.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Dataset</text>
+<text x="185.0" y="118" text-anchor="middle" font-size="12" fill="#555">title + text + label</text>
+<line x1="273.0" y1="102.0" x2="307.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="310.0" y="70" width="170" height="64" rx="10" fill="#e1ebfa" stroke="#2b6cd4" stroke-width="2"/>
+<text x="395.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Leakage check</text>
+<text x="395.0" y="118" text-anchor="middle" font-size="12" fill="#555">remove source tokens</text>
+<line x1="483.0" y1="102.0" x2="517.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="520.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="605.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Preprocess</text>
+<text x="605.0" y="118" text-anchor="middle" font-size="12" fill="#555">clean, tokenize, pad</text>
+<line x1="693.0" y1="102.0" x2="727.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="730.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="815.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Baseline</text>
+<text x="815.0" y="118" text-anchor="middle" font-size="12" fill="#555">TF-IDF + LogReg</text>
+<rect x="100.0" y="194" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="185.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Deep model</text>
+<text x="185.0" y="242" text-anchor="middle" font-size="12" fill="#555">Embedding + BiLSTM</text>
+<line x1="273.0" y1="226.0" x2="307.0" y2="226.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="310.0" y="194" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="395.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Evaluate</text>
+<text x="395.0" y="242" text-anchor="middle" font-size="12" fill="#555">F1, confusion matrix</text>
+<line x1="483.0" y1="226.0" x2="517.0" y2="226.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="520.0" y="194" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="605.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Explain</text>
+<text x="605.0" y="242" text-anchor="middle" font-size="12" fill="#555">top words, LIME</text>
+<line x1="693.0" y1="226.0" x2="727.0" y2="226.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="730.0" y="194" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="815.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Limits</text>
+<text x="815.0" y="242" text-anchor="middle" font-size="12" fill="#555">style, not fact-check</text>
+</svg>

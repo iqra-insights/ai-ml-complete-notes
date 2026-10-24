@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 358" width="1000" height="358" font-family="Arial,Helvetica,sans-serif">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#555"/></marker></defs>
+<rect width="1000" height="358" fill="#ffffff"/>
+<text x="500.0" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111">NLP pipeline: raw text to prediction</text>
+<rect x="100.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="185.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Raw text</text>
+<text x="185.0" y="118" text-anchor="middle" font-size="12" fill="#555">reviews, emails</text>
+<line x1="273.0" y1="102.0" x2="307.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="310.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="395.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Clean</text>
+<text x="395.0" y="118" text-anchor="middle" font-size="12" fill="#555">lowercase, remove noise</text>
+<line x1="483.0" y1="102.0" x2="517.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="520.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="605.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Tokenize</text>
+<text x="605.0" y="118" text-anchor="middle" font-size="12" fill="#555">words / subwords</text>
+<line x1="693.0" y1="102.0" x2="727.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="730.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="815.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Normalize</text>
+<text x="815.0" y="118" text-anchor="middle" font-size="12" fill="#555">stopwords, lemma</text>
+<rect x="100.0" y="194" width="170" height="64" rx="10" fill="#e1ebfa" stroke="#2b6cd4" stroke-width="2"/>
+<text x="185.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Vectorize</text>
+<text x="185.0" y="242" text-anchor="middle" font-size="12" fill="#555">BoW, TF-IDF, embeddings</text>
+<line x1="273.0" y1="226.0" x2="307.0" y2="226.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="310.0" y="194" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="395.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Model</text>
+<text x="395.0" y="242" text-anchor="middle" font-size="12" fill="#555">LR, NB, LSTM, BERT</text>
+<line x1="483.0" y1="226.0" x2="517.0" y2="226.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="520.0" y="194" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="605.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Evaluate</text>
+<text x="605.0" y="242" text-anchor="middle" font-size="12" fill="#555">Precision, Recall, F1</text>
+<line x1="693.0" y1="226.0" x2="727.0" y2="226.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="730.0" y="194" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="815.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Deploy</text>
+<text x="815.0" y="242" text-anchor="middle" font-size="12" fill="#555">API / Streamlit</text>
+<text x="500.0" y="340" text-anchor="middle" font-size="13" fill="#444">Keep negation words like &quot;not&quot; for sentiment tasks. Fit the vectorizer on train data only.</text>
+</svg>

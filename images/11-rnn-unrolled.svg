@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 234" width="1000" height="234" font-family="Arial,Helvetica,sans-serif">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#555"/></marker></defs>
+<rect width="1000" height="234" fill="#ffffff"/>
+<text x="500.0" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111">RNN unrolled over 3 time steps</text>
+<rect x="100.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="185.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">x1 -&gt; h1</text>
+<text x="185.0" y="118" text-anchor="middle" font-size="12" fill="#555">h1 = f(Wx x1 + Wh h0)</text>
+<line x1="273.0" y1="102.0" x2="307.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="310.0" y="70" width="170" height="64" rx="10" fill="#e1ebfa" stroke="#2b6cd4" stroke-width="2"/>
+<text x="395.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">x2 -&gt; h2</text>
+<text x="395.0" y="118" text-anchor="middle" font-size="12" fill="#555">h2 = f(Wx x2 + Wh h1)</text>
+<line x1="483.0" y1="102.0" x2="517.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="520.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="605.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">x3 -&gt; h3</text>
+<text x="605.0" y="118" text-anchor="middle" font-size="12" fill="#555">h3 = f(Wx x3 + Wh h2)</text>
+<line x1="693.0" y1="102.0" x2="727.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="730.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="815.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Output y</text>
+<text x="815.0" y="118" text-anchor="middle" font-size="12" fill="#555">from h3 (many-to-one)</text>
+<text x="500.0" y="216" text-anchor="middle" font-size="13" fill="#444">The same weights are reused at every step. Hidden state h carries memory forward. Training uses BPTT.</text>
+</svg>

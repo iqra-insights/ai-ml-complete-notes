@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1090 234" width="1090" height="234" font-family="Arial,Helvetica,sans-serif">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#555"/></marker></defs>
+<rect width="1090" height="234" fill="#ffffff"/>
+<text x="545.0" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111">Seq2Seq translation with attention</text>
+<rect x="40.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="125.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Source text</text>
+<text x="125.0" y="118" text-anchor="middle" font-size="12" fill="#555">&quot;I love data&quot;</text>
+<line x1="213.0" y1="102.0" x2="247.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="250.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="335.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Encoder</text>
+<text x="335.0" y="118" text-anchor="middle" font-size="12" fill="#555">LSTM / GRU states</text>
+<line x1="423.0" y1="102.0" x2="457.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="460.0" y="70" width="170" height="64" rx="10" fill="#e1ebfa" stroke="#2b6cd4" stroke-width="2"/>
+<text x="545.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Attention</text>
+<text x="545.0" y="118" text-anchor="middle" font-size="12" fill="#555">weighted sum of states</text>
+<line x1="633.0" y1="102.0" x2="667.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="670.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="755.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Decoder</text>
+<text x="755.0" y="118" text-anchor="middle" font-size="12" fill="#555">predicts word by word</text>
+<line x1="843.0" y1="102.0" x2="877.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="880.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="965.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Target text</text>
+<text x="965.0" y="118" text-anchor="middle" font-size="12" fill="#555">&quot;Mujhe data pasand hai&quot;</text>
+<text x="545.0" y="216" text-anchor="middle" font-size="13" fill="#444">Attention lets the decoder look at all encoder states at every step. This removes the single context-vector bottleneck. Metric: BLEU.</text>
+</svg>

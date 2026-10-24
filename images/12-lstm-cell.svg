@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 358" width="1000" height="358" font-family="Arial,Helvetica,sans-serif">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#555"/></marker></defs>
+<rect width="1000" height="358" fill="#ffffff"/>
+<text x="500.0" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111">LSTM cell: 3 gates and a cell-state line</text>
+<rect x="205.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="290.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Forget gate</text>
+<text x="290.0" y="118" text-anchor="middle" font-size="12" fill="#555">f = sigmoid(Wf[h,x]+bf)</text>
+<line x1="378.0" y1="102.0" x2="412.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="415.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="500.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Input gate</text>
+<text x="500.0" y="118" text-anchor="middle" font-size="12" fill="#555">i = sigmoid(Wi[h,x]+bi)</text>
+<line x1="588.0" y1="102.0" x2="622.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="625.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="710.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Candidate</text>
+<text x="710.0" y="118" text-anchor="middle" font-size="12" fill="#555">C~ = tanh(Wc[h,x]+bc)</text>
+<rect x="205.0" y="194" width="170" height="64" rx="10" fill="#e1ebfa" stroke="#2b6cd4" stroke-width="2"/>
+<text x="290.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Cell update</text>
+<text x="290.0" y="242" text-anchor="middle" font-size="12" fill="#555">C = f*Cprev + i*C~</text>
+<line x1="378.0" y1="226.0" x2="412.0" y2="226.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="415.0" y="194" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="500.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Output gate</text>
+<text x="500.0" y="242" text-anchor="middle" font-size="12" fill="#555">o = sigmoid(Wo[h,x]+bo)</text>
+<line x1="588.0" y1="226.0" x2="622.0" y2="226.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="625.0" y="194" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="710.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Hidden state</text>
+<text x="710.0" y="242" text-anchor="middle" font-size="12" fill="#555">h = o * tanh(C)</text>
+<text x="500.0" y="340" text-anchor="middle" font-size="13" fill="#444">Cell state C is updated by addition, so gradients survive over long distances.</text>
+</svg>

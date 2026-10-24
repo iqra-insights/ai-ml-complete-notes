@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+statsmodels
+pmdarima
+tensorflow
+opencv-python
+pytesseract
+mediapipe
+nltk
+openai
+streamlit

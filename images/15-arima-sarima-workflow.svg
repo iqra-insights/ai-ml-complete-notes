@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 358" width="1000" height="358" font-family="Arial,Helvetica,sans-serif">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#555"/></marker></defs>
+<rect width="1000" height="358" fill="#ffffff"/>
+<text x="500.0" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111">ARIMA / SARIMA modelling workflow</text>
+<rect x="100.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="185.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Plot</text>
+<text x="185.0" y="118" text-anchor="middle" font-size="12" fill="#555">trend, seasonality</text>
+<line x1="273.0" y1="102.0" x2="307.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="310.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="395.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Decompose</text>
+<text x="395.0" y="118" text-anchor="middle" font-size="12" fill="#555">additive / multiplicative</text>
+<line x1="483.0" y1="102.0" x2="517.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="520.0" y="70" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="605.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">ADF test</text>
+<text x="605.0" y="118" text-anchor="middle" font-size="12" fill="#555">p &lt; 0.05 = stationary</text>
+<line x1="693.0" y1="102.0" x2="727.0" y2="102.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="730.0" y="70" width="170" height="64" rx="10" fill="#e1ebfa" stroke="#2b6cd4" stroke-width="2"/>
+<text x="815.0" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Difference</text>
+<text x="815.0" y="118" text-anchor="middle" font-size="12" fill="#555">decide d (and D)</text>
+<rect x="100.0" y="194" width="170" height="64" rx="10" fill="#e1ebfa" stroke="#2b6cd4" stroke-width="2"/>
+<text x="185.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">ACF / PACF</text>
+<text x="185.0" y="242" text-anchor="middle" font-size="12" fill="#555">decide q and p</text>
+<line x1="273.0" y1="226.0" x2="307.0" y2="226.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="310.0" y="194" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="395.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Fit</text>
+<text x="395.0" y="242" text-anchor="middle" font-size="12" fill="#555">ARIMA or SARIMA</text>
+<line x1="483.0" y1="226.0" x2="517.0" y2="226.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="520.0" y="194" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="605.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Residual check</text>
+<text x="605.0" y="242" text-anchor="middle" font-size="12" fill="#555">white noise?</text>
+<line x1="693.0" y1="226.0" x2="727.0" y2="226.0" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<rect x="730.0" y="194" width="170" height="64" rx="10" fill="#f7f7f5" stroke="#9a9a94" stroke-width="2"/>
+<text x="815.0" y="221" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Forecast</text>
+<text x="815.0" y="242" text-anchor="middle" font-size="12" fill="#555">RMSE / MAE / MAPE</text>
+<text x="500.0" y="340" text-anchor="middle" font-size="13" fill="#444">Two key decisions: how much to difference (d) and which p, q to pick from ACF/PACF.</text>
+</svg>
